@@ -1,0 +1,3 @@
+select CategoryID, count(*)
+from Products
+group by CategoryID;

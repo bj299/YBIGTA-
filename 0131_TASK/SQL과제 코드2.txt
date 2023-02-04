@@ -1,0 +1,3 @@
+select a.CustomerName, (d.Quantity * f.Price) as Total_Price
+from Customers as a, OrderDetails as d, Orders as e, Products as f
+where a.CustomerID = e.CustomerID and e.OrderID = d.OrderId and d.ProductID = f.ProductID and Total_Price >= 10000;
